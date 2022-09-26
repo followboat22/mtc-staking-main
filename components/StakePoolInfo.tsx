@@ -1,4 +1,3 @@
-import { RewardDistributorKind } from '@cardinal/staking/dist/cjs/programs/rewardDistributor'
 import { BN } from '@project-serum/anchor'
 import {
   formatAmountAsDecimal,
@@ -28,7 +27,7 @@ export const StakePoolInfo = () => {
   const rewardsRate = useRewardsRate()
   const { isFetched: stakePoolLoaded } = useStakePoolData()
   const { data: stakePoolMetadata } = useStakePoolMetadata()
-  const rewardDistributorTokenAccountData = useRewardDistributorTokenAccount()
+ 
 
   if (
     !stakePoolLoaded ||
